@@ -1,6 +1,6 @@
 # StockGular
 
-This project is an Angular stock management application. it works perfectly fine.
+This project is an Angular stock management application. it will works perfectly fine shortly.
 you can contribute to improve it or use it for personal use.
 all rights are reserved for me
 
