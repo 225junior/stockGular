@@ -12,7 +12,7 @@ export const MenuData: Menu[] =
             id: 1, icon: '', title: 'Tableau de Bord', url: '',
             subMenu: [
                 { id: 11, icon: '', title: "Vue d'ensemble", url: '' },
-                { id: 12, icon: '', title: "Statistiques", url: '' }
+                { id: 12, icon: '', title: "Statistiques", url: 'statistiques' }
             ]
         },
         {

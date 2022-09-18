@@ -1,6 +1,6 @@
 <div class="parent mt-3 mb-3" *ngFor="let menu of menu">
-    {{menu.title}}
+    {{menu.title}} <i class="fas fa-chart-pie"></i>
     <div class="enfant" *ngFor="let sub of menu.subMenu">
-        {{sub.title}}
+        <a href="javascript:void(0)" (click)="navigateTo(sub.url)">{{sub.title}}</a>
     </div>
 </div>
