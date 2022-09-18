@@ -1,0 +1,14 @@
+.parent {
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 600;
+}
+
+.enfant{
+    margin-left: 1rem;
+    text-transform: capitalize;
+}
+.enfant:hover{
+    border-bottom: 1px dashed;
+    cursor: pointer;
+}

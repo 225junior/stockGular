@@ -1,1 +1,6 @@
-<p>menu works!</p>
+<div class="parent mt-3 mb-3" *ngFor="let menu of menu">
+    {{menu.title}}
+    <div class="enfant" *ngFor="let sub of menu.subMenu">
+        {{sub.title}}
+    </div>
+</div>
