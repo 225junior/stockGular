@@ -9,7 +9,7 @@ import { PageDashboardComponent } from './pages/page-dashboard/page-dashboard.co
 import { PageStatistiquesComponent } from './pages/page-statistiques/page-statistiques.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { HeaderComponent } from './components/header/header.component';
-import { PageArticleComponent } from './pages/page-article/page-article.component';
+import { PageArticleComponent } from './pages/articles/page-article/page-article.component';
 
 @NgModule({
   declarations: [

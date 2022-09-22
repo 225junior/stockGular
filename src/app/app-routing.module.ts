@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { PageArticleComponent } from './pages/articles/page-article/page-article.component';
 import { PageDashboardComponent } from './pages/page-dashboard/page-dashboard.component';
 import { PageInscriptionComponent } from './pages/page-inscription/page-inscription.component';
 import { PageLoginComponent } from './pages/page-login/page-login.component';
@@ -17,6 +18,7 @@ const routes: Routes = [
     children: [
       { path: 'dashboard', component: PageDashboardComponent },
       { path: 'statistiques', component: PageStatistiquesComponent },
+      { path: 'articles', component: PageArticleComponent }
 
     ]
   }
