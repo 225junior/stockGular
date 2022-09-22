@@ -11,6 +11,8 @@ import { MenuComponent } from './components/menu/menu.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PageArticleComponent } from './pages/articles/page-article/page-article.component';
 import { DetailArticleComponent } from './components/detail-article/detail-article.component';
+import { BouttonActionComponent } from './components/boutton-action/boutton-action.component';
+import { PaginationComponent } from './components/pagination/pagination.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { DetailArticleComponent } from './components/detail-article/detail-artic
     MenuComponent,
     HeaderComponent,
     PageArticleComponent,
-    DetailArticleComponent
+    DetailArticleComponent,
+    BouttonActionComponent,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,
