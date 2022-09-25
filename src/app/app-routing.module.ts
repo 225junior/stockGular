@@ -5,6 +5,7 @@ import { NouvelArticleComponent } from './pages/articles/nouvel-article/nouvel-a
 import { PageArticleComponent } from './pages/articles/page-article/page-article.component';
 import { MoveStockComponent } from './pages/move-stock/move-stock/move-stock.component';
 import { PageClientComponent } from './pages/page-client/page-client/page-client.component';
+import { PageCmdClientFournisseurComponent } from './pages/page-cmd-client-fournisseur/page-cmd-client-fournisseur/page-cmd-client-fournisseur.component';
 import { PageDashboardComponent } from './pages/page-dashboard/page-dashboard.component';
 import { PageFournisseurComponent } from './pages/page-fournisseur/page-fournisseur/page-fournisseur.component';
 import { PageInscriptionComponent } from './pages/page-inscription/page-inscription.component';
@@ -28,8 +29,10 @@ const routes: Routes = [
       { path: 'move-stock', component: MoveStockComponent },
       { path: 'clients', component: PageClientComponent },
       { path: 'nouveau-client', component: NouveauClientFournisseurComponent },
+      { path: 'commande-client', component: PageCmdClientFournisseurComponent },
       { path: 'fournisseurs', component: PageFournisseurComponent },
       { path: 'nouveau-fournisseur', component: NouveauClientFournisseurComponent },
+      { path: 'commande-fournisseur', component: PageCmdClientFournisseurComponent },
 
     ]
   }
