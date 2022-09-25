@@ -15,6 +15,7 @@ import { BouttonActionComponent } from './components/boutton-action/boutton-acti
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { NouvelArticleComponent } from './pages/articles/nouvel-article/nouvel-article.component';
 import { MoveStockComponent } from './pages/move-stock/move-stock/move-stock.component';
+import { DetailMouveStockArticleComponent } from './components/detail-mouve-stock-article/detail-mouve-stock-article.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { MoveStockComponent } from './pages/move-stock/move-stock/move-stock.com
     PaginationComponent,
     NouvelArticleComponent,
     MoveStockComponent,
+    DetailMouveStockArticleComponent,
   ],
   imports: [
     BrowserModule,
