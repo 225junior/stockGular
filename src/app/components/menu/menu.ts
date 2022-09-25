@@ -25,14 +25,14 @@ export const MenuData: Menu[] =
         {
             id: 3, icon: '', title: 'Clients', url: '',
             subMenu: [
-                { id: 31, icon: '', title: "Clients", url: '' },
+                { id: 31, icon: '', title: "Clients", url: 'clients' },
                 { id: 32, icon: '', title: "Commandes Client", url: '' }
             ]
         },
         {
             id: 4, icon: '', title: 'Forunisseurs', url: '',
             subMenu: [
-                { id: 41, icon: '', title: "Forunisseurs", url: '' },
+                { id: 41, icon: '', title: "Forunisseurs", url: 'fournisseurs' },
                 { id: 42, icon: '', title: "Commandes Forunisseur", url: '' }
             ]
         },

@@ -17,6 +17,11 @@ import { NouvelArticleComponent } from './pages/articles/nouvel-article/nouvel-a
 import { MoveStockComponent } from './pages/move-stock/move-stock/move-stock.component';
 import { DetailMouveStockArticleComponent } from './components/detail-mouve-stock-article/detail-mouve-stock-article.component';
 import { DetailMouveStockComponent } from './components/detail-mouve-stock/detail-mouve-stock.component';
+import { DetailClientsFournisseursComponent } from './components/detail-clients-fournisseurs/detail-clients-fournisseurs.component';
+import { PageClientComponent } from './pages/page-client/page-client/page-client.component';
+import { PageFournisseurComponent } from './pages/page-fournisseur/page-fournisseur/page-fournisseur.component';
+import { NouveauClientFournisseurComponent } from './components/nouveau-client-fournisseur/nouveau-client-fournisseur.component';
+import { DetailCmdCltFournComponent } from './components/detail-cmd-clt-fourn/detail-cmd-clt-fourn.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +40,11 @@ import { DetailMouveStockComponent } from './components/detail-mouve-stock/detai
     MoveStockComponent,
     DetailMouveStockArticleComponent,
     DetailMouveStockComponent,
+    DetailClientsFournisseursComponent,
+    PageClientComponent,
+    PageFournisseurComponent,
+    NouveauClientFournisseurComponent,
+    DetailCmdCltFournComponent,
   ],
   imports: [
     BrowserModule,
