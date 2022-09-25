@@ -19,7 +19,7 @@ export const MenuData: Menu[] =
             id: 2, icon: '', title: 'Articles', url: '',
             subMenu: [
                 { id: 21, icon: '', title: "Articles", url: 'articles' },
-                { id: 22, icon: '', title: "Mouvement stock", url: '' }
+                { id: 22, icon: '', title: "Mouvement stock", url: 'move-stock' }
             ]
         },
         {
