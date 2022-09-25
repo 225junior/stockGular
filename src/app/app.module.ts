@@ -22,6 +22,7 @@ import { PageClientComponent } from './pages/page-client/page-client/page-client
 import { PageFournisseurComponent } from './pages/page-fournisseur/page-fournisseur/page-fournisseur.component';
 import { NouveauClientFournisseurComponent } from './components/nouveau-client-fournisseur/nouveau-client-fournisseur.component';
 import { DetailCmdCltFournComponent } from './components/detail-cmd-clt-fourn/detail-cmd-clt-fourn.component';
+import { DetailCmdComponent } from './components/detail-cmd/detail-cmd.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { DetailCmdCltFournComponent } from './components/detail-cmd-clt-fourn/de
     PageFournisseurComponent,
     NouveauClientFournisseurComponent,
     DetailCmdCltFournComponent,
+    DetailCmdComponent,
   ],
   imports: [
     BrowserModule,
