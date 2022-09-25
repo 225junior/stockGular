@@ -16,6 +16,7 @@ import { PaginationComponent } from './components/pagination/pagination.componen
 import { NouvelArticleComponent } from './pages/articles/nouvel-article/nouvel-article.component';
 import { MoveStockComponent } from './pages/move-stock/move-stock/move-stock.component';
 import { DetailMouveStockArticleComponent } from './components/detail-mouve-stock-article/detail-mouve-stock-article.component';
+import { DetailMouveStockComponent } from './components/detail-mouve-stock/detail-mouve-stock.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { DetailMouveStockArticleComponent } from './components/detail-mouve-stoc
     NouvelArticleComponent,
     MoveStockComponent,
     DetailMouveStockArticleComponent,
+    DetailMouveStockComponent,
   ],
   imports: [
     BrowserModule,
