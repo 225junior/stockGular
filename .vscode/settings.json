@@ -3,4 +3,5 @@
     "editor.formatOnSave": true,
     // "editor.formatOnSaveMode": "modifications",
     "editor.stickyScroll.enabled": true,
+    "editor.fontSize": 20
 }
