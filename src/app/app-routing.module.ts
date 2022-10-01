@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { NewCmdClientFournisseurComponent } from './components/new-cmd-client-fournisseur/new-cmd-client-fournisseur.component';
 import { NouveauClientFournisseurComponent } from './components/nouveau-client-fournisseur/nouveau-client-fournisseur.component';
 import { NouvelArticleComponent } from './pages/articles/nouvel-article/nouvel-article.component';
 import { PageArticleComponent } from './pages/articles/page-article/page-article.component';
@@ -30,9 +31,11 @@ const routes: Routes = [
       { path: 'clients', component: PageClientComponent },
       { path: 'nouveau-client', component: NouveauClientFournisseurComponent },
       { path: 'commande-client', component: PageCmdClientFournisseurComponent },
+      { path: 'nouvelle-commande-client', component: NewCmdClientFournisseurComponent },
       { path: 'fournisseurs', component: PageFournisseurComponent },
       { path: 'nouveau-fournisseur', component: NouveauClientFournisseurComponent },
       { path: 'commande-fournisseur', component: PageCmdClientFournisseurComponent },
+      { path: 'nouvelle-commande-fournisseur', component: NewCmdClientFournisseurComponent },
 
     ]
   }
