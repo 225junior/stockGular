@@ -1,7 +1,7 @@
 {
-    "editor.tabSize": 4,
-    "editor.formatOnSave": true,
-    // "editor.formatOnSaveMode": "modifications",
-    "editor.stickyScroll.enabled": true,
-    "editor.fontSize": 20
+	"editor.tabSize": 4,
+	"editor.formatOnSave": true,
+	"editor.formatOnSaveMode": "file",
+	"editor.stickyScroll.enabled": true,
+	"editor.fontSize": 20
 }

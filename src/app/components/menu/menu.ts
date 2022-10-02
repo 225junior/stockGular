@@ -39,7 +39,7 @@ export const MenuData: Menu[] =
         {
             id: 5, icon: '', title: 'Parametrages', url: '',
             subMenu: [
-                { id: 51, icon: '', title: "Categories", url: '' },
+                { id: 51, icon: '', title: "Categories", url: 'categories' },
                 { id: 52, icon: '', title: "Utilisateurs", url: '' }
             ]
         },
