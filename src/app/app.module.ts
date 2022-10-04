@@ -27,6 +27,9 @@ import { PageCmdClientFournisseurComponent } from './pages/page-cmd-client-fourn
 import { NewCmdClientFournisseurComponent } from './components/new-cmd-client-fournisseur/new-cmd-client-fournisseur.component';
 import { PageCategoriesComponent } from './pages/categories/page-categories/page-categories.component';
 import { NouvelleCategorieComponent } from './pages/categories/nouvelle-categorie/nouvelle-categorie.component';
+import { DetailUtilisateurComponent } from './pages/utilisateur/detail-utilisateur/detail-utilisateur.component';
+import { PageUtilisateursComponent } from './pages/utilisateur/page-utilisateurs/page-utilisateurs.component';
+import { NouvelUtilisateurComponent } from './pages/utilisateur/nouvel-utilisateur/nouvel-utilisateur.component';
 
 @NgModule({
   declarations: [
@@ -55,14 +58,15 @@ import { NouvelleCategorieComponent } from './pages/categories/nouvelle-categori
     NewCmdClientFournisseurComponent,
     PageCategoriesComponent,
     NouvelleCategorieComponent,
+    DetailUtilisateurComponent,
+    PageUtilisateursComponent,
+    NouvelUtilisateurComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  exports: [
-    // MenuComponent
-  ],
+  exports: [],
   providers: [],
   bootstrap: [AppComponent]
 })
