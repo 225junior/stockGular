@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nouvel-utilisateur',
@@ -7,12 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NouvelUtilisateurComponent implements OnInit {
   cancel() {
-    throw new Error('Method not implemented.');
+    this.router.navigate(['utilisateurs'])
   }
 
-  constructor() { }
+  constructor(
+    private router: Router,
+
+  ) { }
 
   ngOnInit(): void {
   }
+
 
 }

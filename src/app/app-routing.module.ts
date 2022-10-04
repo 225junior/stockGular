@@ -14,6 +14,7 @@ import { PageFournisseurComponent } from './pages/page-fournisseur/page-fourniss
 import { PageInscriptionComponent } from './pages/page-inscription/page-inscription.component';
 import { PageLoginComponent } from './pages/page-login/page-login.component';
 import { PageStatistiquesComponent } from './pages/page-statistiques/page-statistiques.component';
+import { NouvelUtilisateurComponent } from './pages/utilisateur/nouvel-utilisateur/nouvel-utilisateur.component';
 import { PageUtilisateursComponent } from './pages/utilisateur/page-utilisateurs/page-utilisateurs.component';
 
 const routes: Routes = [
@@ -46,7 +47,7 @@ const routes: Routes = [
       { path: 'nouvelle-categorie', component: NouvelleCategorieComponent },
 
       { path: 'utilisateurs', component: PageUtilisateursComponent },
-      // { path: 'nouvelle-utilisateur', component: detail },
+      { path: 'nouvel-utilisateur', component: NouvelUtilisateurComponent },
 
     ]
   }
