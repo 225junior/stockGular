@@ -26,6 +26,7 @@ import { DetailCmdComponent } from './components/detail-cmd/detail-cmd.component
 import { PageCmdClientFournisseurComponent } from './pages/page-cmd-client-fournisseur/page-cmd-client-fournisseur/page-cmd-client-fournisseur.component';
 import { NewCmdClientFournisseurComponent } from './components/new-cmd-client-fournisseur/new-cmd-client-fournisseur.component';
 import { PageCategoriesComponent } from './pages/categories/page-categories/page-categories.component';
+import { NouvelleCategorieComponent } from './pages/categories/nouvelle-categorie/nouvelle-categorie.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { PageCategoriesComponent } from './pages/categories/page-categories/page
     PageCmdClientFournisseurComponent,
     NewCmdClientFournisseurComponent,
     PageCategoriesComponent,
+    NouvelleCategorieComponent,
   ],
   imports: [
     BrowserModule,

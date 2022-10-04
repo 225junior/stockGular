@@ -28,7 +28,7 @@ export class PageCategoriesComponent implements OnInit {
     throw new Error('Method not implemented.');
   }
   nouvelleCategory(): void {
-    this.router.navigate(['categories'])
+    this.router.navigate(['nouvelle-categorie'])
   }
 
 

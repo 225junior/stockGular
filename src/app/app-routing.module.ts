@@ -4,6 +4,7 @@ import { NewCmdClientFournisseurComponent } from './components/new-cmd-client-fo
 import { NouveauClientFournisseurComponent } from './components/nouveau-client-fournisseur/nouveau-client-fournisseur.component';
 import { NouvelArticleComponent } from './pages/articles/nouvel-article/nouvel-article.component';
 import { PageArticleComponent } from './pages/articles/page-article/page-article.component';
+import { NouvelleCategorieComponent } from './pages/categories/nouvelle-categorie/nouvelle-categorie.component';
 import { PageCategoriesComponent } from './pages/categories/page-categories/page-categories.component';
 import { MoveStockComponent } from './pages/move-stock/move-stock/move-stock.component';
 import { PageClientComponent } from './pages/page-client/page-client/page-client.component';
@@ -41,7 +42,7 @@ const routes: Routes = [
       { path: 'nouvelle-commande-fournisseur', component: NewCmdClientFournisseurComponent },
 
       { path: 'categories', component: PageCategoriesComponent },
-      { path: 'nouvelle-categorie', component: PageCategoriesComponent },
+      { path: 'nouvelle-categorie', component: NouvelleCategorieComponent },
 
     ]
   }
