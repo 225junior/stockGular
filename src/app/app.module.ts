@@ -30,6 +30,7 @@ import { NouvelleCategorieComponent } from './pages/categories/nouvelle-categori
 import { DetailUtilisateurComponent } from './components/detail-utilisateur/detail-utilisateur.component';
 import { PageUtilisateursComponent } from './pages/utilisateur/page-utilisateurs/page-utilisateurs.component';
 import { NouvelUtilisateurComponent } from './pages/utilisateur/nouvel-utilisateur/nouvel-utilisateur.component';
+import { ChangerPasswordComponent } from './pages/profil/changer-password/changer-password.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +62,7 @@ import { NouvelUtilisateurComponent } from './pages/utilisateur/nouvel-utilisate
     DetailUtilisateurComponent,
     PageUtilisateursComponent,
     NouvelUtilisateurComponent,
+    ChangerPasswordComponent,
   ],
   imports: [
     BrowserModule,
