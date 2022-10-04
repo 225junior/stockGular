@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./changer-password.component.scss']
 })
 export class ChangerPasswordComponent implements OnInit {
+  changerMotDePasseUtilisateur() {
+    throw new Error('Method not implemented.');
+  }
+  cancel() {
+    throw new Error('Method not implemented.');
+  }
 
   constructor() { }
 
