@@ -14,6 +14,8 @@ import { PageFournisseurComponent } from './pages/page-fournisseur/page-fourniss
 import { PageInscriptionComponent } from './pages/page-inscription/page-inscription.component';
 import { PageLoginComponent } from './pages/page-login/page-login.component';
 import { PageStatistiquesComponent } from './pages/page-statistiques/page-statistiques.component';
+import { ChangerPasswordComponent } from './pages/profil/changer-password/changer-password.component';
+import { PageProfilComponent } from './pages/profil/page-profil/page-profil.component';
 import { NouvelUtilisateurComponent } from './pages/utilisateur/nouvel-utilisateur/nouvel-utilisateur.component';
 import { PageUtilisateursComponent } from './pages/utilisateur/page-utilisateurs/page-utilisateurs.component';
 
@@ -48,6 +50,9 @@ const routes: Routes = [
 
       { path: 'utilisateurs', component: PageUtilisateursComponent },
       { path: 'nouvel-utilisateur', component: NouvelUtilisateurComponent },
+
+      { path: 'changer-Password', component: ChangerPasswordComponent },
+      { path: 'profil', component: PageProfilComponent },
 
     ]
   }

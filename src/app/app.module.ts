@@ -31,6 +31,7 @@ import { DetailUtilisateurComponent } from './components/detail-utilisateur/deta
 import { PageUtilisateursComponent } from './pages/utilisateur/page-utilisateurs/page-utilisateurs.component';
 import { NouvelUtilisateurComponent } from './pages/utilisateur/nouvel-utilisateur/nouvel-utilisateur.component';
 import { ChangerPasswordComponent } from './pages/profil/changer-password/changer-password.component';
+import { PageProfilComponent } from './pages/profil/page-profil/page-profil.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +64,7 @@ import { ChangerPasswordComponent } from './pages/profil/changer-password/change
     PageUtilisateursComponent,
     NouvelUtilisateurComponent,
     ChangerPasswordComponent,
+    PageProfilComponent,
   ],
   imports: [
     BrowserModule,
