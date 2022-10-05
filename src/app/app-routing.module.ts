@@ -37,12 +37,12 @@ const routes: Routes = [
 
       { path: 'clients', component: PageClientComponent },
       { path: 'nouveau-client', component: NouveauClientFournisseurComponent },
-      { path: 'commande-client', component: PageCmdClientFournisseurComponent },
+      { path: 'commande-client', component: PageCmdClientFournisseurComponent, data: { origin: 'client' } },
       { path: 'nouvelle-commande-client', component: NewCmdClientFournisseurComponent },
 
       { path: 'fournisseurs', component: PageFournisseurComponent },
       { path: 'nouveau-fournisseur', component: NouveauClientFournisseurComponent },
-      { path: 'commande-fournisseur', component: PageCmdClientFournisseurComponent },
+      { path: 'commande-fournisseur', component: PageCmdClientFournisseurComponent, data: { origin: 'fournisseur' } },
       { path: 'nouvelle-commande-fournisseur', component: NewCmdClientFournisseurComponent },
 
       { path: 'categories', component: PageCategoriesComponent },
