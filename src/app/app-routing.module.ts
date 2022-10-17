@@ -36,14 +36,14 @@ const routes: Routes = [
       { path: 'move-stock', component: MoveStockComponent },
 
       { path: 'clients', component: PageClientComponent },
-      { path: 'nouveau-client', component: NouveauClientFournisseurComponent },
+      { path: 'nouveau-client', component: NouveauClientFournisseurComponent, data: { origin: 'client' } },
       { path: 'commande-client', component: PageCmdClientFournisseurComponent, data: { origin: 'client' } },
-      { path: 'nouvelle-commande-client', component: NewCmdClientFournisseurComponent },
+      { path: 'nouvelle-commande-client', component: NewCmdClientFournisseurComponent, data: { origin: 'client' } },
 
       { path: 'fournisseurs', component: PageFournisseurComponent },
-      { path: 'nouveau-fournisseur', component: NouveauClientFournisseurComponent },
+      { path: 'nouveau-fournisseur', component: NouveauClientFournisseurComponent, data: { origin: 'fournisseur' } },
       { path: 'commande-fournisseur', component: PageCmdClientFournisseurComponent, data: { origin: 'fournisseur' } },
-      { path: 'nouvelle-commande-fournisseur', component: NewCmdClientFournisseurComponent },
+      { path: 'nouvelle-commande-fournisseur', component: NewCmdClientFournisseurComponent, data: { origin: 'fournisseur' } },
 
       { path: 'categories', component: PageCategoriesComponent },
       { path: 'nouvelle-categorie', component: NouvelleCategorieComponent },

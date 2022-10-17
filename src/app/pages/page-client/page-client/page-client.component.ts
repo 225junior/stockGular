@@ -16,7 +16,7 @@ export class PageClientComponent implements OnInit {
   }
 
   nouveauClient(): void {
-    this.router.navigate(['nouvel-article'])
+    this.router.navigate(['nouveau-client'])
   }
 
 }

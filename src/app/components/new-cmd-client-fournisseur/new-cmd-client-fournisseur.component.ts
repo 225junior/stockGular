@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-new-cmd-client-fournisseur',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewCmdClientFournisseurComponent implements OnInit {
 
-  constructor() { }
+  origin = '';
+
+  constructor(
+    public activatedRoute: ActivatedRoute,
+  ) { }
 
   ngOnInit(): void {
+    this.activatedRoute.data.subscribe(data => { this.origin = data['origin'] })
   }
 
 }

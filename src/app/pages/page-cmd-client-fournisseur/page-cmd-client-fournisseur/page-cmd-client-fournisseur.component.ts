@@ -19,8 +19,11 @@ export class PageCmdClientFournisseurComponent implements OnInit {
     this.activatedRoute.data.subscribe(data => { this.origin = data['origin'] })
   }
 
-  nouvelleCommande(): void {
-    this.router.navigate(['nouvelle-commande-client'])
+  nouvelleCommande(): Promise<boolean> {
+    if (this.origin === 'client')
+      return this.router.navigate(['nouvelle-commande-client'])
+    else
+      return this.router.navigate(['nouvelle-commande-fournisseur'])
   }
 
 }
