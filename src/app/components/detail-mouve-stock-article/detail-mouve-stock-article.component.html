@@ -75,9 +75,12 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal"><i
-                        class="fas fa-ban"></i>&nbsp;Annuler</button>
-                <button type="button" class="btn btn-primary"> <i class="fas fa-save"></i>&nbsp;Enregistrer</button>
+                <button class="btn btn-danger m-2" (click)="cancel()">
+                    ❌ Annuler
+                </button>
+                <button class="btn btn-primary" (click)="register()">
+                    💾 Enregitrer
+                </button>
             </div>
         </div>
     </div>

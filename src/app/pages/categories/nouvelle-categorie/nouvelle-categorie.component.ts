@@ -15,7 +15,7 @@ export class NouvelleCategorieComponent implements OnInit {
 	ngOnInit(): void {
 	}
 
-	enregistrerCategory() {
+	register() {
 		throw new Error('Method not implemented.');
 	}
 	cancel() {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-detail-article',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailArticleComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  cancel() {
+    this.router.navigate(['articles'])
+  }
+
+  remove() {
+    // this.router.navigate(['articles'])
   }
 
 }

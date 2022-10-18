@@ -24,7 +24,7 @@ export class PageCategoriesComponent implements OnInit {
   confirmerEtSupprimerCat() {
     throw new Error('Method not implemented.');
   }
-  annulerSuppressionCat() {
+  cancel() {
     throw new Error('Method not implemented.');
   }
   nouvelleCategory(): void {

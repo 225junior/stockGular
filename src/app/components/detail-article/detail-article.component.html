@@ -79,15 +79,18 @@
                     Etes vous-sur de vouloir supprimer cet article?
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                        <i class="fas fa-ban"></i>&nbsp;Annuler</button>
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">
-                        <!-- <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="confirmerEtSupprimerArticle()"> -->
-                        <i class="fas fa-trash-alt"></i>&nbsp;Supprimer
-                    </button>
+
+
+                    <div class="col-md-12 text-end">
+                        <button class="btn btn-danger m-2" (click)="cancel()">
+                            ❌ Annuler
+                        </button>
+                        <button class="btn btn-danger" (click)="remove()" data-dismiss="modal">
+                            💾 Supprimer
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-

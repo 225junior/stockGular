@@ -50,10 +50,15 @@
                 Etes vous-sur de vouloir supprimer cette categorie?
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="annulerSuppressionCat()">
-                    <i class="fas fa-ban"></i>&nbsp;Annuler</button>
-                <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="confirmerEtSupprimerCat()">
-                    <i class="fas fa-trash-alt"></i>&nbsp;Supprimer</button>
+
+                <div class="col-md-12 text-end">
+                    <button class="btn btn-danger m-2" (click)="cancel()">
+                        ❌ Annuler
+                    </button>
+                    <button class="btn btn-primary" (click)="confirmerEtSupprimerCat()">
+                        💾 Enregitrer
+                    </button>
+                </div>
             </div>
         </div>
     </div>

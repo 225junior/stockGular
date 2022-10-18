@@ -7,9 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./nouvel-utilisateur.component.scss']
 })
 export class NouvelUtilisateurComponent implements OnInit {
-  cancel() {
-    this.router.navigate(['utilisateurs'])
-  }
+
 
   constructor(
     private router: Router,
@@ -20,4 +18,11 @@ export class NouvelUtilisateurComponent implements OnInit {
   }
 
 
+  cancel() {
+    this.router.navigate(['utilisateurs'])
+  }
+
+  register() {
+    this.router.navigate(['articles'])
+  }
 }

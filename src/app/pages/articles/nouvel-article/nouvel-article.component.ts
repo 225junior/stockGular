@@ -16,8 +16,11 @@ export class NouvelArticleComponent implements OnInit {
   }
 
 
-  annuler() {
+  cancel() {
     this.router.navigate(['articles'])
   }
 
+  register() {
+    this.router.navigate(['articles'])
+  }
 }

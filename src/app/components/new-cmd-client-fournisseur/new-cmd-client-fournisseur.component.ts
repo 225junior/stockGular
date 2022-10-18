@@ -20,12 +20,15 @@ export class NewCmdClientFournisseurComponent implements OnInit {
     this.activatedRoute.data.subscribe(data => { this.origin = data['origin'] })
   }
 
-  annuler() {
+  cancel() {
     if (this.origin === constantes.CLIENT)
       this.router.navigate(['articles'])
     else
       this.router.navigate(['fournisseurs'])
+  }
 
+  register() {
+    this.router.navigate(['articles'])
   }
 
 

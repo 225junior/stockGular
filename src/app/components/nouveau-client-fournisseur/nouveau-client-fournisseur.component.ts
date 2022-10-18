@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-nouveau-client-fournisseur',
@@ -11,11 +11,19 @@ export class NouveauClientFournisseurComponent implements OnInit {
   origin = '';
   constructor(
     public activatedRoute: ActivatedRoute,
-
+    public router: Router
   ) { }
 
   ngOnInit(): void {
     this.activatedRoute.data.subscribe(data => { this.origin = data['origin'] })
+  }
+
+  cancel() {
+    this.router.navigate(['articles'])
+  }
+
+  register() {
+    this.router.navigate(['articles'])
   }
 
 }

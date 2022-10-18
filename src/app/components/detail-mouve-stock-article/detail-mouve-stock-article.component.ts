@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-detail-mouve-stock-article',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailMouveStockArticleComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
   }
+
+
+  cancel() {
+    this.router.navigate(['articles'])
+  }
+
+  register() {
+    this.router.navigate(['articles'])
+  }
+
 
 }
