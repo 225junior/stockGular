@@ -1,14 +1,11 @@
 <div class="d-flex">
-    <div class="p-2 flex-fill ">
-        <!-- <div class="p-2 flex-fill " *ngIf="isImporterVisible"> -->
+    <div *ngIf="showBtnImport" class="p-2 flex-fill ">
         <button type="button" class="btn btn-warning">🖨Importer</button>
     </div>
-    <div class="p-2 flex-fill ">
-        <!-- <div class="p-2 flex-fill " *ngIf="isExporterVisible"> -->
+    <div class="p-2 flex-fill" *ngIf="showBtnExport">
         <button type="button" class="btn btn-success">🔦Exporter</button>
     </div>
-    <div class="p-2 flex-fill ">
-        <!-- <div class="p-2 flex-fill " *ngIf="isNouveauVisible"> -->
+    <div class="p-2 flex-fill" *ngIf="showBtnNew">
         <button type="button" class="btn btn-primary" (click)="buttonNouveauClicked()">➕ Nouveau</button>
     </div>
 </div>

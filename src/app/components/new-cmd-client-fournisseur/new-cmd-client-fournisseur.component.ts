@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { constantes } from 'src/app/shared/consts';
 
 @Component({
   selector: 'app-new-cmd-client-fournisseur',
@@ -12,10 +13,20 @@ export class NewCmdClientFournisseurComponent implements OnInit {
 
   constructor(
     public activatedRoute: ActivatedRoute,
+    public router: Router
   ) { }
 
   ngOnInit(): void {
     this.activatedRoute.data.subscribe(data => { this.origin = data['origin'] })
   }
+
+  annuler() {
+    if (this.origin === constantes.CLIENT)
+      this.router.navigate(['articles'])
+    else
+      this.router.navigate(['fournisseurs'])
+
+  }
+
 
 }
