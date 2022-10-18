@@ -1,8 +1,9 @@
-<div class="parent card mt-1" *ngFor="let menu of menu">
-    <div class="card-header">
+<div class="parent card mt-1" *ngFor="let menu of menus">
+    <div class="card-header" [ngClass]="{'border-3 border-primary': menu.isActive, '': !menu.isActive}">
         {{menu.title}} <i class="fas fa-chart-pie"></i>
-      </div>
+    </div>
     <div class="enfant" *ngFor="let sub of menu.subMenu">
-        <a href="javascript:void(0)" (click)="navigateTo(sub.url)">{{sub.title}}</a>
+        <a href="javascript:void(0)" [ngClass]="sub.isActive ? 'badge bg-primary fs-6' : ''"
+            (click)="navigateTo(sub)">{{sub.title}}</a>
     </div>
 </div>
