@@ -18,6 +18,8 @@ import { ChangerPasswordComponent } from './pages/profil/changer-password/change
 import { PageProfilComponent } from './pages/profil/page-profil/page-profil.component';
 import { NouvelUtilisateurComponent } from './pages/utilisateur/nouvel-utilisateur/nouvel-utilisateur.component';
 import { PageUtilisateursComponent } from './pages/utilisateur/page-utilisateurs/page-utilisateurs.component';
+import { constantes } from './shared/consts';
+
 
 const routes: Routes = [
   {
@@ -36,14 +38,14 @@ const routes: Routes = [
       { path: 'move-stock', component: MoveStockComponent },
 
       { path: 'clients', component: PageClientComponent },
-      { path: 'nouveau-client', component: NouveauClientFournisseurComponent, data: { origin: 'client' } },
-      { path: 'commande-client', component: PageCmdClientFournisseurComponent, data: { origin: 'client' } },
-      { path: 'nouvelle-commande-client', component: NewCmdClientFournisseurComponent, data: { origin: 'client' } },
+      { path: 'nouveau-client', component: NouveauClientFournisseurComponent, data: { origin: constantes.CLIENT } },
+      { path: 'commande-client', component: PageCmdClientFournisseurComponent, data: { origin: constantes.CLIENT } },
+      { path: 'nouvelle-commande-client', component: NewCmdClientFournisseurComponent, data: { origin: constantes.CLIENT } },
 
       { path: 'fournisseurs', component: PageFournisseurComponent },
-      { path: 'nouveau-fournisseur', component: NouveauClientFournisseurComponent, data: { origin: 'fournisseur' } },
-      { path: 'commande-fournisseur', component: PageCmdClientFournisseurComponent, data: { origin: 'fournisseur' } },
-      { path: 'nouvelle-commande-fournisseur', component: NewCmdClientFournisseurComponent, data: { origin: 'fournisseur' } },
+      { path: 'nouveau-fournisseur', component: NouveauClientFournisseurComponent, data: { origin: constantes.FOURNISSEUR } },
+      { path: 'commande-fournisseur', component: PageCmdClientFournisseurComponent, data: { origin: constantes.FOURNISSEUR } },
+      { path: 'nouvelle-commande-fournisseur', component: NewCmdClientFournisseurComponent, data: { origin: constantes.FOURNISSEUR } },
 
       { path: 'categories', component: PageCategoriesComponent },
       { path: 'nouvelle-categorie', component: NouvelleCategorieComponent },

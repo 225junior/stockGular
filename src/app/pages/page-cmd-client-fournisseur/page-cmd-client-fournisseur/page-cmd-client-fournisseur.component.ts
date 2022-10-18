@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { constantes } from 'src/app/shared/consts';
 
 @Component({
   selector: 'app-page-cmd-client-fournisseur',
@@ -20,7 +21,7 @@ export class PageCmdClientFournisseurComponent implements OnInit {
   }
 
   nouvelleCommande(): Promise<boolean> {
-    if (this.origin === 'client')
+    if (this.origin === constantes.CLIENT)
       return this.router.navigate(['nouvelle-commande-client'])
     else
       return this.router.navigate(['nouvelle-commande-fournisseur'])
