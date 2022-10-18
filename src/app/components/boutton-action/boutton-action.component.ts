@@ -7,6 +7,8 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class BouttonActionComponent implements OnInit {
 
+  // @Input
+
   @Output()
   clickEvent = new EventEmitter();
 
