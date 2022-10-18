@@ -22,9 +22,9 @@ export class NewCmdClientFournisseurComponent implements OnInit {
 
   cancel() {
     if (this.origin === constantes.CLIENT)
-      this.router.navigate(['articles'])
+      this.router.navigate(['commande-client'])
     else
-      this.router.navigate(['fournisseurs'])
+      this.router.navigate(['commande-fournisseur'])
   }
 
   register() {

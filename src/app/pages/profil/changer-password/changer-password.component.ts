@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-changer-password',
@@ -9,13 +10,18 @@ export class ChangerPasswordComponent implements OnInit {
   changerMotDePasseUtilisateur() {
     throw new Error('Method not implemented.');
   }
-  cancel() {
-    throw new Error('Method not implemented.');
-  }
 
-  constructor() { }
+  constructor(
+    public router: Router
+  ) { }
 
   ngOnInit(): void {
   }
+
+
+  cancel() {
+    this.router.navigate(['profil']);
+  }
+
 
 }
