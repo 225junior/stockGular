@@ -1,0 +1,11 @@
+{
+    "categories": [
+        {
+            "Id": 1,
+            "Code": "Art-1",
+            "Designation": "Pomade rouge",
+            "EntrepriseId": 1,
+            "created_at": 1666936405277
+        }
+    ]
+}
