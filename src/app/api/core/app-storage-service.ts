@@ -10,7 +10,7 @@ export class AppStorageServie {
     setItem(key: string, value: string): void {
         window.localStorage[key] = value
     }
-    removeKey(key: string): void {
+    removeToken(key: string): void {
         window.localStorage.removeItem(key)
     }
 }
