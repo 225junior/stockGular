@@ -32,6 +32,7 @@ import { PageUtilisateursComponent } from './pages/utilisateur/page-utilisateurs
 import { NouvelUtilisateurComponent } from './pages/utilisateur/nouvel-utilisateur/nouvel-utilisateur.component';
 import { ChangerPasswordComponent } from './pages/profil/changer-password/changer-password.component';
 import { PageProfilComponent } from './pages/profil/page-profil/page-profil.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { PageProfilComponent } from './pages/profil/page-profil/page-profil.comp
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   exports: [],
   providers: [],

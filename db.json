@@ -7,5 +7,12 @@
             "EntrepriseId": 1,
             "created_at": 1666936405277
         }
+    ],
+    "articles": [
+        {
+            "Id": 1,
+            "CodeArticle": "Art1",
+            "Designation": "Ordinateur portable"
+        }
     ]
 }

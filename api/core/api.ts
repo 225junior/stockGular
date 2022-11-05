@@ -35,6 +35,38 @@ export class Api {
     }
 
 
+    put(path: string, body: any, httpOptions?: Object): Observable<any> {
+        return this.http
+            .put(
+                this.getUrl(path),
+                JSON.stringify(body),
+                this.getHttpOptions(httpOptions)
+            )
+            .pipe(catchError(this.handleError));
+    }
+
+    post(path: string, body: any, httpOptions?: Object): Observable<any> {
+        return this.http
+            .post(
+                this.getUrl(path),
+                JSON.stringify(body),
+                this.getHttpOptions(httpOptions)
+            )
+            .pipe(catchError(this.handleError));
+    }
+
+    putFormData(path: string, body: FormData, httpOptions?: Object): Observable<any> {
+        return this.http
+            .put(this.getUrl(path), body, httpOptions)
+            .pipe(catchError(this.handleError));
+    }
+
+    delete(path: string, httpOptions?: Object): Observable<any> {
+        return this.http
+            .delete(this.getUrl(path), this.getHttpOptions(httpOptions))
+            .pipe(catchError(this.handleError));
+    }
+
 
     private getHttpOptions(options: any): any {
         if (options) {
@@ -109,8 +141,7 @@ export class Api {
                 return throwError(() => new InternalServerError(errorMessage, response));
             case 0:
                 if (!customException) {
-                    errorMessage =
-                        "Erreur de connexion, vérifiez que vous êtes connecté au réseau.";
+                    errorMessage = "Erreur de connexion, vérifiez que vous êtes connecté au réseau.";
                 }
                 return throwError(() => new NetworkError(errorMessage, response));
             default:
